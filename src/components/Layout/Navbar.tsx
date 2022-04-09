@@ -91,14 +91,14 @@ const Navbar = () => {
             </HStack>
             <Stack justify={"flex-end"} direction={"row"} spacing={10}>
               <Button
-                as={"a"}
+                as={RouterNavLink}
                 variant={"link"}
-                href={"#"}
+                to="/sign-in"
                 display={{ base: "none", md: "inline-flex" }}
               >
                 Sign In
               </Button>
-              <Button as={"a"} variant="brand" href={"#"}>
+              <Button as={RouterNavLink} variant="brand" to="/sign-up">
                 Sign Up
               </Button>
             </Stack>

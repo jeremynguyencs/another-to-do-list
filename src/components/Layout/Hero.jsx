@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Stack, Container, Flex, Heading, Button, Text } from "@chakra-ui/react";
+import { Stack, Flex, Heading, Button, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 import Navbar from "./Navbar";
 
@@ -18,7 +19,7 @@ const Hero = () => {
               way to do to-do lists
             </Heading>
             <Stack direction="row" gap={4}>
-              <Button variant="brand" size="lg">
+              <Button as={Link} variant="brand" size="lg" to="/sign-up">
                 Sign up
               </Button>
               <Button variant="ghost" size="lg">
